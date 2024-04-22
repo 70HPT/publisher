@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="../../../../Front%20End/styles.css">
+    <meta charset="UTF-8"> 
+
+ 
+
+  
+</head>
+
+<body>
+    <nav id='menu'>
+        <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+       
+        <ul>
+            <li><a href='home.html'>Home</a></li>            
+            <li><a href='games.html'>Browse Games</a></li>
+            <li><a href='admin.html'>Admin</a></li>
+            <li><a href='../../../../Front%20End/publisher.html'>Publisher</a></li>
+            <li><a href='../../../../Front%20End/user.html'>User</a></li>
+            
+           
+        </ul>
+    </nav>
+     <h3></h3>
+     <h1>Welcome To the Video Game Library</h1>
+     
+    <section class="login-section" id="user-login">
+        <h2>User Login</h2>
+        <form action="../../../../Front%20End/user.html" method="post"> <!-- Replace with the actual URL for user dashboard -->
+            <label for="userUsername">Username:</label>
+            <input type="text" id="userUsername" name="userUsername" required>
+            
+            <label for="userPassword">Password:</label>
+            <input type="password" id="userPassword" name="userPassword" required>
+            
+               <a href="../../../../Front%20End/user.html" class="link-button">Login</a>
+        </form>
+    </section>
+    
+    <!-- Publisher Login Section -->
+    <section class="login-section" id="publisher-login">
+        <h2>Publisher Login</h2>
+        <form action="../../../../Front%20End/publisher.html" method="post"> <!-- Replace with the actual URL for Publisher dashboard -->
+            <label for="publisherUsername">Username:</label>
+            <input type="text" id="publisherUsername" name="publisherUsername" required>
+            
+            <label for="publisherPassword">Password:</label>
+            <input type="password" id="publisherPassword" name="publisherPassword" required>
+            
+               <a href="../../../../Front%20End/publisher.html" class="link-button">Login</a>
+        </form>
+    </section>
+    
+    <!-- Administrator Login Section -->
+    <section class="login-section" id="admin-login">
+        <h2>Administrator Login</h2>
+        <form action="admin.html" method="post"> <!-- Replace with the actual URL for admin dashboard -->
+            <label for="adminUsername">Username:</label>
+            <input type="text" id="adminUsername" name="adminUsername" required>
+            
+            <label for="adminPassword">Password:</label>
+            <input type="password" id="adminPassword" name="adminPassword" required>
+            
+               <a href="admin.html" class="link-button">Login</a>
+        </form>
+    </section>
+
+    <img src="/Users/chrisnieves/Downloads/helldivers.jpeg" alt="Description of the image">
+    
+   
+   
+            
+            
+
+            
+                
+        </div>
+    
+    </div>
+</body>
+
+</html>

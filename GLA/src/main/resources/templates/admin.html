@@ -1,0 +1,78 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="../../../../Front%20End/styles.css">
+</head>
+
+<body>
+    <nav id='menu'>
+        <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+       
+        <ul>
+            <li><a href='../../../../Front%20End/home.html'>Home</a></li>
+            <li><a href='../../../../Front%20End/games.html'>Browse Games</a></li>
+            <li><a href='admin.html'>Admin</a></li>
+            <li><a href='../../../../Front%20End/publisher.html'>Publisher</a></li>
+            <li><a href='../../../../Front%20End/user.html'>User</a></li>
+           
+        </ul>
+       
+        
+
+    </nav>  
+    <h1>Admin Page </h1>
+
+    <section>
+        <h2>User Account Management</h2>
+        
+        <form action="/addUser" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <button type="submit">Add User</button>
+        </form>
+        
+        <form action="/deleteUser" method="post">
+            <label for="deleteUsername">Username to Delete:</label>
+            <input type="text" id="deleteUsername" name="deleteUsername" required>
+            <button type="submit">Delete User</button>
+        </form>
+    </section>
+    
+    <!-- Section for deleting games -->
+    <section>
+        <h2>Delete Games</h2>
+        
+        <form action="/deleteGame" method="post">
+            <label for="gameName">Game Name:</label>
+            <input type="text" id="gameName" name="gameName" required>
+            <button type="submit">Delete Game</button>
+        </form>
+    </section>
+    
+    <!-- Section for editing user profiles and changing roles -->
+    <section>
+        <h2>User Profile and Role Management</h2>
+        
+        <form action="/editProfile" method="post">
+            <label for="editUsername">Username to Edit:</label>
+            <input type="text" id="editUsername" name="editUsername" required>
+            
+            <label for="newRole">New Role:</label>
+            <select id="newRole" name="newRole">
+                <option value="normal">Normal User</option>
+                <option value="Publisher">Publisher</option>
+                <option value="administrator">Administrator</option>
+            </select>
+            
+            <button type="submit">Edit Profile</button>
+        </form>
+    </section>
+    
+    
+
+    
+</body>
+
+</html>
